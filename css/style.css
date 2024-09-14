@@ -1,0 +1,45 @@
+/* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    margin: auto 1.5em;
+}
+
+.header-color {
+    color: #003399;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: italic;
+    color: #990000;
+}
+
+#pageWelcome {
+    font-family: 'gilda-display';
+}
+
+div {
+    border: medium solid;
+    border-color: #003399;
+}
+
+.link {
+    color: blue;
+}
+
+span {
+    font-weight: italic;
+    color: #e68a00;
+}
