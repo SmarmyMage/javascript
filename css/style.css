@@ -43,3 +43,8 @@ span {
     font-weight: italic;
     color: #e68a00;
 }
+
+#home-img {
+    max-width: 500px;
+    max-height: 500px;
+}
