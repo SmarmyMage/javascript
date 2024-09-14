@@ -45,6 +45,6 @@ span {
 }
 
 #home-img {
-    max-width: 1900px;
-    max-height: 800px;
+    width: 1900px;
+    height: 900px;
 }
