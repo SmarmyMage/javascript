@@ -1,20 +1,20 @@
 @media screen and (max-width: 499px) {
     #homeImg {
-        height: auto;
-        width: 90%;
+        height: 320px;
+        width: 380px;
     }
 }
 
 @media screen and (min-width: 500px) {
     #homeImg {
-        height: auto;
-        width: 90%;
+        width: 475px;
+        height: 320px;
     }
 }
 
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 1000px) {
     #homeImg {
-        width: 90%;
-        height: auto;
+        width: 1900px;
+        height: 900px;
     }
 }
