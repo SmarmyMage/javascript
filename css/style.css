@@ -41,3 +41,8 @@ div {
 span {
     font-weight:lighter;
 }
+
+#homeImg {
+    width: 1900px;
+    height: 900px;
+}

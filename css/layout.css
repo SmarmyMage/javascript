@@ -1,14 +1,14 @@
 @media screen and (max-width: 499px) {
     #homeImg {
-        height: 250px;
-        width: 350px;
+        max-height: 250px;
+        max-width: 350px;
     }
 }
 
 @media screen and (min-width: 500px) {
     #homeImg {
-        height: 300px;
-        width: 475px;
+        max-height: 300px;
+        max-width: 475px;
     }
 }
 
