@@ -22,7 +22,6 @@ h1 {
 }
 
 h2 {
-    font-weight: italic;
     color: #990000;
 }
 
@@ -41,7 +40,7 @@ div {
 
 span {
     font-weight: italic;
-    color: #e68a00;
+    color: #52527a;
 }
 
 #home-img {
