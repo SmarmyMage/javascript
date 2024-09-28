@@ -7,6 +7,7 @@
 
 body {
     font-family: sans-serif;
+    padding: 1em
 }
 
 main {
@@ -20,6 +21,7 @@ main {
 h1 {
     font-weight: bold;
     color: #003399;
+    margin-bottom: 2em;
 }
 
 h2 {
