@@ -7,7 +7,8 @@
 
 body {
     font-family: sans-serif;
-    padding: 1em
+    margin: 1em;
+    padding: 1em;
 }
 
 main {
@@ -21,11 +22,12 @@ main {
 h1 {
     font-weight: bold;
     color: #003399;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 h2 {
     color: #990000;
+    margin: 1em;
 }
 
 #pageWelcome {
