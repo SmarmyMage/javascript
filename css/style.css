@@ -8,7 +8,6 @@
 body {
     font-family: sans-serif;
     margin: 1em;
-    padding: 1em;
 }
 
 main {
@@ -27,7 +26,7 @@ h1 {
 
 h2 {
     color: #990000;
-    margin: 1em;
+    margin-bottom: 1em;
 }
 
 #pageWelcome {
