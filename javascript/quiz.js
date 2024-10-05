@@ -7,14 +7,16 @@ function triviaQuiz() {
     for (i = 0; i <= 3; i++) {    
         var attempts = 3;
         while (attempts > 0) {
-            ans = prompt("What is " + triviaQuest[i]);
-            if (ans == triviaAns[i]) {
+            ans = prompt("What is " + triviaQuest[0]);
+            if (ans == triviaAns[0]) {
                 alert("Correct!");
                 attempts = 0;
             } else {
                 alert("Incorrect");
                 attempts = attempts - 1;
             }
+
+            if (i === 4) {break; }
 
             if (attempts == 3) {
                 points = points + 3;
