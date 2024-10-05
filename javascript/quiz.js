@@ -24,11 +24,10 @@ function triviaQuiz() {
                 points = points + 1;
             } else {
                 points = points + 0;
-                attempts = 0;
             }
         }
         
-        //if (i === 4) {break; }
+        if (i === 4) {break; }
     }
   return points;
 }
