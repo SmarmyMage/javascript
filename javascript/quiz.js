@@ -16,8 +16,6 @@ function triviaQuiz() {
                 attempts = attempts - 1;
             }
 
-            if (i === 4) {break; }
-
             if (attempts == 3) {
                 points = points + 3;
             } else if (attempts == 2) {
@@ -29,6 +27,8 @@ function triviaQuiz() {
                 attempts = 0;
             }
         }
+        
+        //if (i === 4) {break; }
     }
   return points;
 }
