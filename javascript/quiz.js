@@ -24,7 +24,6 @@ function triviaQuiz() {
                 points = points + 1;
             } else {
                 points = points + 0;
-                attempts = 0;
             }
         }
     }
