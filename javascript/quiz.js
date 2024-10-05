@@ -23,7 +23,7 @@ function triviaQuiz() {
             } else if (attempts == 1) {
                 points = points + 1;
             } else {
-                points = points + 0;
+                points = points + 0; 
             }
         }
     }
