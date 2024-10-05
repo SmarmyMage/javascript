@@ -3,7 +3,7 @@ var triviaAns = ['37', '6', "E lucevan le stelle"];
 
 
 var points = 0;
-for (var i = 0; i <= 3; i++) {
+for (i = 0; i <= 3; i++) {
     var score = triviaQuiz(i);
  }
 
@@ -34,5 +34,3 @@ function triviaQuiz(i) {
     }
   return points;
 }
-
-console.log(triviaQuiz(i));
