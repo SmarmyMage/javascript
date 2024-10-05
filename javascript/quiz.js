@@ -34,3 +34,5 @@ function triviaQuiz(i) {
     }
   return points;
 }
+
+console.log(triviaQuiz(i));
