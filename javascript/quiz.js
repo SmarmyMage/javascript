@@ -3,7 +3,7 @@ var triviaAns = ['37', '6', "E lucevan le stelle"];
 
 
 var points = 0;
-for (var i = 0; i = triviaQuest.length; i++) {
+for (var i = 0; i <= triviaQuest.length; i++) {
     var score = triviaQuiz(i);
  }
 
