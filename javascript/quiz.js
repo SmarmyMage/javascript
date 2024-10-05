@@ -1,5 +1,5 @@
-var triviaQuest = ['the smallest irregular prime?', "the smallest perfect number?", "the second aria in the opera, 'Tosca?'"];
-var triviaAns = ['37', "6", "E lucevan le stelle"];
+var triviaQuest = ['the smallest irregular prime?', 'the smallest perfect number?', 'the second aria in the opera, Tosca?'];
+var triviaAns = ['37', '6', 'E lucevan le stelle'];
 
 var points = 0;
 for (i = 0; i <= 3; i++) {
