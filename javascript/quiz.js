@@ -20,16 +20,17 @@ function triviaQuiz(i) {
             attempts = attempts - 1;
         }
 
-        if (attempts == 3) {
+        if (attempts == 3 && ans == triviaAns[i]) {
             points = points + 3;
-        } else if (attempts == 2) {
+        } else if (attempts == 2 && ans == triviaAns[i]) {
             points = points + 2;
-        } else if (attempts == 1) {
+        } else if (attempts == 1 && ans == triviaAns[i]) {
             points = points + 1;
         } else {
             points = points + 0;
-            attempts = 0;
         }
+
+        if (i === 4) {break; }
     }
   return points;
 }
