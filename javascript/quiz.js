@@ -9,7 +9,7 @@ for (i = 0; i <= 3; i++) {
 function triviaQuiz(i) {
     var attempts = 3;
     while (attempts > 0) {
-      ans = prompt("What is " + triviaQuest);
+      ans = prompt("What is " + triviaQuest[i]);
       if (ans == triviaAns[i]) {
         alert("Correct!");
         attempts = 0;
@@ -17,7 +17,7 @@ function triviaQuiz(i) {
         alert("Incorrect");
         attempts = attempts - 1;
       }
-      
+
       if (attempts == 3) {
         points = points + 3;
       } else if (attempts == 2) {
