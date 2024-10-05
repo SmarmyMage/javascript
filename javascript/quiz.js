@@ -1,11 +1,12 @@
-
 var mathQuest = ['3 + 2', '7 - 4', '10 / 5', '6 X 2'];
 var mathAns = ['5', '3', '2', '12'];
 
+var points = 0;
+for (i = 0; i <= 3; i++) {
+	var score = mathQuiz(i);
+}
 
-function mathQuiz() {
-  var points = 0;
-  for (i = 0; i <= 3; i++) {
+function mathQuiz(i) {
     var attempts = 3;
     while (attempts > 0) {
       ans = prompt("What is " + mathQuest[i]);
@@ -18,6 +19,5 @@ function mathQuiz() {
         attempts = attempts - 1;
       }
     }
-  }
   return points;
 }
