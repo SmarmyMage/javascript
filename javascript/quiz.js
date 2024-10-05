@@ -4,7 +4,7 @@ var triviaAns = ['37', '6', "E lucevan le stelle"];
 function triviaQuiz() {
 
     var points = 0;
-    for (var i = 0; i <= 3; i++) {    
+    for (i = 0; i <= 3; i++) {    
         var attempts = 3;
         while (attempts > 0) {
             ans = prompt("What is " + triviaQuest[0]);
