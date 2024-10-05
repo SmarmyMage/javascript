@@ -1,23 +1,33 @@
-var mathQuest = ['3 + 2', '7 - 4', '10 / 5', '6 X 2'];
-var mathAns = ['5', '3', '2', '12'];
+var triviaQuest = ['the smallest irregular prime?', "the smallest perfect number?", "the second aria in the opera, 'Tosca?'"];
+var triviaAns = ['37', "6", "E lucevan le stelle"];
 
 var points = 0;
 for (i = 0; i <= 3; i++) {
-	var score = mathQuiz(i);
+	var score = triviaQuiz(i);
 }
 
-function mathQuiz(i) {
+function triviaQuiz(i) {
     var attempts = 3;
     while (attempts > 0) {
-      ans = prompt("What is " + mathQuest[i]);
-      if (ans == mathAns[i]) {
-        points = points + 1;
+      ans = prompt("What is " + triviaQuest);
+      if (ans == triviaAns[i]) {
         alert("Correct!");
         attempts = 0;
       } else {
         alert("Incorrect");
         attempts = attempts - 1;
       }
+      
+      if (attempts == 3) {
+        points = points + 3;
+      } else if (attempts == 2) {
+        points = points + 2;
+      } else if (attempts == 1) {
+        points = points + 1;
+      } else {
+        points = points + 0;
+      }
+
     }
   return points;
 }
