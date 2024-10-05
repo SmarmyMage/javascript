@@ -16,15 +16,16 @@ function triviaQuiz() {
                 attempts = attempts - 1;
             }
 
-            if (attempts == 3) {
-                points = points + 3;
-            } else if (attempts == 2) {
-                points = points + 2;
-            } else if (attempts == 1) {
-                points = points + 1;
-            } else {
-                points = points + 0; 
-            }
+        if (attempts == 3) {
+            points = points + 3;
+        } else if (attempts == 2) {
+            points = points + 2;
+        } else if (attempts == 1) {
+            points = points + 1;
+        } else {
+            points = points + 0;
+        }
+        
         }
     }
   return points;
