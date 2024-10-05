@@ -30,7 +30,7 @@ function triviaQuiz(i) {
             points = points + 0;
         }
 
-        if (i === 4) {break; }
+        if (i === 4 && attempts == 0) {break; }
     }
   return points;
 }
