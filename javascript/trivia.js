@@ -1,6 +1,20 @@
+
+
+var today = new Date();
+var months = today.GetMonth();
+var days = today.GetDay();
+var date = today.getDate();
+var year = today.getFullYear();
+var hours = today.getHours();
+var minutes = today.getMinutes();
+
+function name(userName) {
+    var firsLetter = userName.charAt(0);
+    firstLetter = userName.toUpperCase();
+}
+
 var triviaQuest = ["the smallest irregular prime?", "the smallest perfect number?", "the second aria in the opera, Tosca?"];
 var triviaAns = ['37', '6', "E lucevan le stelle"];
-
 
 var points = 0;
 var triviaQuest = triviaQuest.length
