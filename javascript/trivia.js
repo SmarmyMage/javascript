@@ -8,16 +8,13 @@ var year = today.getFullYear();
 var hours = today.getHours();
 var minutes = today.getMinutes();
 
-var visitorName = userName(userName);
-
-function userName(userName) { 
+function visitorName(userName) { 
     var firstLetter = userName.charAt(0);
     firstLetter = userName.toUpperCase();
 }
 
 let visitorName = prompt("Welcome!\nPlease tell use your name. ");
 
-var visitorEmail = validEmail(email);
  
 function validEmail(email) {
     var emailRegex = /[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/;
@@ -31,9 +28,9 @@ function validEmail(email) {
     }
 }
 
-let visitorEmail = prompt("Please enter your email. ");
+let validEmail = prompt("Please enter your email. ");
 
-window.alert(visitorEmail([0]) + " + " + visitorEmail([1]));
+window.alert(validEmail([0]) + " + " + validEmail([1]));
 
 
 var quotes = ["A person's a person, no matter how small. - Dr. Seuss", "The young man knows the rules, but the old man knows the exceptions.- Oliver Wendell Holmes, Sr.",
