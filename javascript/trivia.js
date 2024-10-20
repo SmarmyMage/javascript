@@ -50,13 +50,13 @@ var randQuote = quotes[Math.floor(Math.random()*3)+1];
 
 switch (hours) {
     case (hours < 12): {
-        window.alert('Good morning, ' + visitorName + ".");
+        window.alert('Good morning, ' + visitorName + '.');
     }
     case (hours < 18): {
-        window.alert('Good afternoon, ' + visitorName + ".");
+        window.alert('Good afternoon, ' + visitorName + '.');
     }
     default:
-        window.alert('Good evening, ' + visitorName + ".");
+        window.alert('Good evening, ' + visitorName + '.');
 }
 
 var triviaQuest = ["the name of the dog that found the Jules rimet Cup in 1966?", "the name of the Soviet ghost town in Norway?", "the second aria in the opera, Tosca?"];
