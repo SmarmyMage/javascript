@@ -8,9 +8,9 @@ var year = today.getFullYear();
 var hours = today.getHours();
 var minutes = today.getMinutes();
 
-var visitorName = name(userName);
+var visitorName = userName(userName);
 
-function name(userName) { 
+function userName(userName) { 
     var firstLetter = userName.charAt(0);
     firstLetter = userName.toUpperCase();
 }
