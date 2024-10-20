@@ -8,13 +8,16 @@ var year = today.getFullYear();
 var hours = today.getHours();
 var minutes = today.getMinutes();
 
+var visitorName = name(userName);
 
 function name(userName) { 
     var firstLetter = userName.charAt(0);
     firstLetter = userName.toUpperCase();
 }
 
-let userName = prompt("Welcome!\nPlease tell use your name. ");
+let visitorName = prompt("Welcome!\nPlease tell use your name. ");
+
+var visitorEmail = validEmail(email);
  
 function validEmail(email) {
     var emailRegex = /[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/;
@@ -28,9 +31,9 @@ function validEmail(email) {
     }
 }
 
-let validEmail = prompt("Please enter your email. ");
+let visitorEmail = prompt("Please enter your email. ");
 
-window.alert(validEmail([0]) + " + " + validEmail([1]));
+window.alert(visitorEmail([0]) + " + " + visitorEmail([1]));
 
 
 var quotes = ["A person's a person, no matter how small. - Dr. Seuss", "The young man knows the rules, but the old man knows the exceptions.- Oliver Wendell Holmes, Sr.",
@@ -51,13 +54,13 @@ var randQuote = quotes[Math.floor(Math.random()*3)+1];
 
 switch (hours) {
     case (hours < 12): {
-        window.alert("Good morning, " + userName + ".");
+        window.alert("Good morning, " + visitorName + ".");
     }
     case (hours < 18): {
-        window.alert("Good afternoon, " + userName + ".");
+        window.alert("Good afternoon, " + visitorName + ".");
     }
     default:
-        window.alert("Good evening, " + userName + ".");
+        window.alert("Good evening, " + visitorName + ".");
 }
 
 var triviaQuest = ["the name of the dog that found the Jules rimet Cup in 1966?", "the name of the Soviet ghost town in Norway?", "the second aria in the opera, Tosca?"];
