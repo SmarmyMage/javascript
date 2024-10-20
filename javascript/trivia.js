@@ -2,7 +2,7 @@ var today = new Date();
 //var months = today.GetMonth();
 //var days = today.GetDay();
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-var days = ['Sunday', 'Monday', "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
+var days = ['Sunday', 'Monday', "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"];
 var date = today.getDate();
 var year = today.getFullYear();
 var hours = today.getHours();
@@ -14,7 +14,7 @@ function name(userName) {
     firstLetter = userName.toUpperCase();
 }
 
-let visitorName = prompt("Welcome!\nPlease tell use your name. ");
+let userName = prompt("Welcome!\nPlease tell use your name. ");
  
 function validEmail(email) {
     var emailRegex = /[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/;
@@ -28,9 +28,9 @@ function validEmail(email) {
     }
 }
 
-let visitorEmail = prompt("Please enter your email. ");
+let validEmail = prompt("Please enter your email. ");
 
-window.alert(validEmail([0]) + " + " + validEmail([1]) )
+window.alert(validEmail([0]) + " + " + validEmail([1]));
 
 
 var quotes = ["A person's a person, no matter how small. - Dr. Seuss", "The young man knows the rules, but the old man knows the exceptions.- Oliver Wendell Holmes, Sr.",
@@ -51,13 +51,13 @@ var randQuote = quotes[Math.floor(Math.random()*3)+1];
 
 switch (hours) {
     case (hours < 12): {
-        window.alert('Good morning, ' + visitorName + ".");
+        window.alert("Good morning, " + userName + ".");
     }
     case (hours < 18): {
-        window.alert('Good afternoon, ' + visitorName + ".");
+        window.alert("Good afternoon, " + userName + ".");
     }
     default:
-        window.alert('Good evening, ' + visitorName + ".");
+        window.alert("Good evening, " + userName + ".");
 }
 
 var triviaQuest = ["the name of the dog that found the Jules rimet Cup in 1966?", "the name of the Soviet ghost town in Norway?", "the second aria in the opera, Tosca?"];
