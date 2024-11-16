@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    $("#newsSignup").hide();
+    //$("#newsSignup").hide();
 
-    $("a").click(function(event) {
+    $("#signuplink").click(function(event) {
         event.preventDefault();
-        $("#signuplink").slideToggle();
+        $("#newsSignup").slideToggle();
         if ($('#openclose').text() === '+') {
             $('#openclose').text('-');
         } else {
