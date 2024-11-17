@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     $("#slogan").hover(function(){
         $(function(){
-            $("#slogan").fadeOut("linear", function(){
+            $("#slogan").fadeOut("normal", "linear", function(){
                 $("#slogan").text("Hand Picked Just for You");
             }).fadeIn("slow", "swing");
         });
@@ -27,4 +27,11 @@ $(document).ready(function() {
     });
 
     $("#rose").animate({right: '+100px', opacity: 1}, "slow", "swing");
+
+    $("form").submit(function(evt){
+        evt.preventDefault();
+        alert("Thank you for registering");
+        $("newsSignup").hide();
+        $("#signuplink").fadeTo(0.30);
+    })
 });
