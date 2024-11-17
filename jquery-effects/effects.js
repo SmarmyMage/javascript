@@ -31,7 +31,7 @@ $(document).ready(function() {
     $("form").submit(function(evt){
         evt.preventDefault();
         alert("Thank you for registering");
-        $("newsSignup").hide();
-        $("#signuplink").fadeTo(0.30);
+        $("#newsSignup").hide();
+        $("#signuplink").fadeTo(0.3);
     })
 });
