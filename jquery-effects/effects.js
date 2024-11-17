@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    //$("#newsSignup").hide();
+    $("#newsSignup").hide();
 
     $("#signuplink").click(function(event) {
         event.preventDefault();
@@ -12,4 +12,19 @@ $(document).ready(function() {
     });
     
 
+    $("#slogan").hover(function(){
+        $(function(){
+            $("#slogan").fadeOut("linear", function(){
+                $("#slogan").text("Hand Picked Just for You");
+            }).fadeIn("slow", "swing");
+        });
+
+        $(function(){
+            $("#slogan").fadeOut("fast", "swing", function(){
+                $("#slogan").text("The Power of Flowers");
+            }).fadeIn("slow", "linear");
+        });
+    });
+
+    $("#rose").animate({right: '+=100px', opacity: 1}, "slow", "swing");
 });
