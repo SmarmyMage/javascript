@@ -30,8 +30,8 @@ $(document).ready(function() {
 
     $("form").submit(function(evt){
         evt.preventDefault();
-        alert("Thank you for registering");
         $("#newsSignup").hide();
         $("#signuplink").fadeTo(0.3);
+        alert("Thank you for registering.");
     })
 });
