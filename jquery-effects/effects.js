@@ -26,5 +26,5 @@ $(document).ready(function() {
         });
     });
 
-    $("#rose").animate({right: '+=100px', opacity: 1}, "slow", "swing");
+    $("#rose").animate({right: '+100px', opacity: 1}).fadeIn("slow", "swing");
 });
