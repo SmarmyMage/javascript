@@ -26,10 +26,10 @@ $(document).ready(function() {
 		$('.add').show();
 	});
 
-	$('#rating').click(function(){
-		$('img').siblings().attr('src', 'staroff.gif');
-		$('img').closest().attr('src', 'staron.gif');
-		$('img').prev().attr('src', 'staron.gif');
+	$('.rating').click(function(){
+		$(this).siblings().attr('src', 'staroff.gif');
+		$(this).closest('img').attr('src', 'staron.gif');
+		$(this).prev().attr('src', 'staron.gif');
 	});
 
 });
