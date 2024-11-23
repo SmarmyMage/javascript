@@ -27,9 +27,9 @@ $(document).ready(function() {
 	});
 
 	$('.rating').click(function(){
-		$(this).siblings().attr('src', 'staroff.gif');
-		$(this).closest('img').attr('src', 'staron.gif');
-		$(this).prev().attr('src', 'staron.gif');
+		$('img').siblings().attr('src', 'staroff.gif');
+		$('img').closest().attr('src', 'staron.gif');
+		$('img').prev().attr('src', 'staron.gif');
 	});
 
 });
