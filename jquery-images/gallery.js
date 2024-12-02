@@ -1,8 +1,24 @@
 $(document).ready(function() {
-    $("#thumbs").hover(
+    $("#thumbs img").hover(
     function(){
-        $("#thumbs img").css({"border-width": "thin", "border-color": "#006400", "box-shadow": "5px 10px"});
+        var borderOn = {"border-width": "thin", "border-color": "darkgreen", "box-shadow": "5px 10px"};
+        $(this).css(borderOn);
     }, function(){
-        $("thumbs img").css({"border-width": "none", "border-color": "none", "box-shadow": "none"});
+        var borderOff = {"border-width": "none", "border-color": "none", "box-shadow": "none"};
+        $(this).css(borderOff);
+    })
+    
+    $('#gallery img').each(function() {
+        var imgFile = $(this).attr('src');
+        var imgAlt = $(this).attr('alt');
+        $(this).click(function() {
+            $('#lgPic').attr('src', imgFile);
+            $('figcaption').text(imgAlt);
+        });
     });
-});
+
+    $("#lgPic").click(function(){
+        var imgLink = $(this).attr('src');
+        window.open(imgLink);
+    })
+})
