@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +8,12 @@
         <link rel="stylesheet" href="css/layout.css">
         <script src="javascript/trivia.js" defer></script>
 	</head>
-
     <main>
-
         <h1>Trivia</h1>
-
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about-us.html">About Us</a>
+        </nav>
             <script>
                 var score = triviaQuiz(i);
                 var userEmail = validEmail(email);
@@ -25,7 +25,5 @@
                 percent.toFixed(2);
                 document.write("Your percent score is " + percent + "%");
             </script>
-
     </main>
-
 </html>
