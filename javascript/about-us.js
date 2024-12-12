@@ -17,10 +17,18 @@ $(document).ready(function() {
 
     $("#hover").hover(
         function() {
-          $(this).attr("src", "Click_Icon2.jpg");
+          $(this).attr("src", "Click_Icon2.png");
         },
         function() {
-          $(this).attr("src", "Click_Icon.jpg");
+          $(this).attr("src", "Click_Icon.png");
         }
-      );
+    );
+
+    $("#change").click(function() {
+        if ($(this).attr("src") === "J_Icon.png") {
+            $(this).attr("src", "Pavia_Icon.png");
+        } else if($(this).attr("src") === "Pavia_Icon.png") {
+           $(this).attr("src", "J_Icon.png");
+        }
+    })
 })
